@@ -3,6 +3,9 @@ import 'package:fleetime_hris/ui/pages/signin/signin_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:form_builder_validators/localization/l10n.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -26,6 +29,16 @@ class MyApp extends StatelessWidget {
       theme: lightTheme,
       home: const LoginPage(),
       debugShowCheckedModeBanner: false,
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        FormBuilderLocalizations.delegate,
+      ],
+      supportedLocales: const [
+        Locale('id', 'ID'),
+      ],
+      locale: const Locale('id', 'ID'),
     );
   }
 }
