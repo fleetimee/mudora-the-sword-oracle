@@ -1,5 +1,4 @@
 import 'package:fleetime_hris/common/constant/color_constant.dart';
-import 'package:fleetime_hris/common/constant/string_constant.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigationBarButton extends StatelessWidget {
@@ -27,11 +26,11 @@ class BottomNavigationBarButton extends StatelessWidget {
               borderRadius: BorderRadius.circular(8.0),
             ),
           ),
-          child: const Text(
-            StringConstant.loginButton,
-            style: TextStyle(
+          child: Text(
+            title,
+            style: const TextStyle(
               fontSize: 16.0,
-              fontWeight: FontWeight.w400,
+              fontWeight: FontWeight.bold,
               color: Colors.white,
             ),
           ),

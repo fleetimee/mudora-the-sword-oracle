@@ -8,4 +8,10 @@ class StringConstant {
   static const String rememberMe = 'Ingat saya';
   static const String forgotPassword = 'Lupa password';
   static const String loginButton = 'Masuk';
+
+  // No Connection Page Constant
+  static const String noConnectionTitle = 'Koneksi Anda Terputus';
+  static const String noConnectionDescription =
+      'Pastikan wifi atau data seluler anda menyala dan kemudian coba lagi';
+  static const String noConnectionButton = 'Coba Lagi';
 }
