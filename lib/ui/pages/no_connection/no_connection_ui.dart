@@ -27,6 +27,7 @@ class NoConnectionPage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.w700,
+                color: AppColors.grayscaleTitle,
               ),
             ),
             const SizedBox(height: 8.0),
