@@ -15,7 +15,8 @@ class BottomNavigationBarButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 32),
-      child: SizedBox(
+      child: Container(
+        color: Colors.transparent,
         width: double.infinity,
         height: 48.0,
         child: ElevatedButton(

@@ -67,4 +67,20 @@ class StringConstant {
   static const String newsTitle = 'Berita';
   static const String moreNews = 'Lihat Semua';
   static const String newsAuthor = 'Sonia Eka Putri';
+
+  // Berita Pengumuman Page Constant
+  static const String newsAnnouncementTitle = 'Berita Pengumuman';
+  static const String newsAnnouncemenetTitleTab1 = 'Berita';
+  static const String newsAnnouncementTitleTab2 = 'Pengumuman';
+
+  // Tambah Aktivitas Page Constant
+  static const String addActivityTitle = 'Tambah Laporan Aktivitas';
+  static const String addActivityButton = 'Kirim';
+  static const String addActivityDate = 'Rabu, 29 Maret 2023';
+  static const String addActivityName = 'Novian Andika';
+  static const String addActivityDepartment = 'Person In Charge';
+  static const String addActivityTimeStartLabel = 'Jam Mulai';
+  static const String addActivityTimeEndLabel = 'Jam Selesai';
+  static const String addActivityTakePhoto = 'Ambil Gambar';
+  static const String addActivityDescription = 'Keterangan';
 }
