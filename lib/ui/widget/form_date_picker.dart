@@ -8,6 +8,7 @@ class FleetimeDatePicker extends StatefulWidget {
   final InputDecoration decoration;
   final void Function(dynamic)? onChanged;
   final void Function(dynamic)? onSaved;
+  final String? Function(dynamic)? validator;
 
   const FleetimeDatePicker({
     super.key,
@@ -15,6 +16,7 @@ class FleetimeDatePicker extends StatefulWidget {
     required this.decoration,
     this.onChanged,
     this.onSaved,
+    this.validator,
   });
 
   @override
@@ -59,6 +61,7 @@ class _FleetimeDatePickerState extends State<FleetimeDatePicker> {
       name: widget.name,
       onChanged: widget.onChanged,
       onSaved: widget.onSaved,
+      validator: widget.validator,
       // valueTransformer: _timeOfDayToUtc,
       builder: (FormFieldState<dynamic> field) {
         return InkWell(
