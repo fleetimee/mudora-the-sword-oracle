@@ -66,7 +66,7 @@ class StringConstant {
 
   static const String newsTitle = 'Berita';
   static const String moreNews = 'Lihat Semua';
-  static const String newsAuthor = 'Sonia Eka Putri';
+  static const String newsAuthor = 'Aulia Octaviani';
 
   // Berita Pengumuman Page Constant
   static const String newsAnnouncementTitle = 'Berita Pengumuman';
