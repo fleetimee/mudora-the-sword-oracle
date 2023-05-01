@@ -2,6 +2,7 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:fleetime_hris/common/constant/color_constant.dart';
 import 'package:fleetime_hris/ui/widget/form_date_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_image_picker/form_builder_image_picker.dart';
 
 class FleetimeDatePickerReuseable extends StatelessWidget {
@@ -128,6 +129,59 @@ class FleetimeImagePickerReuseable extends StatelessWidget {
             borderSide: BorderSide(
               color: AppColors.stateErrorBase,
             ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class FleetimeTextFieldReuseable extends StatelessWidget {
+  const FleetimeTextFieldReuseable({
+    super.key,
+    required this.name,
+    required this.maxLines,
+    this.validator,
+    required this.hintText,
+  });
+
+  final String name;
+  final int maxLines;
+  final String? Function(String?)? validator;
+  final String hintText;
+
+  @override
+  Widget build(BuildContext context) {
+    return FormBuilderTextField(
+      name: name,
+      maxLines: maxLines,
+      validator: validator,
+      style: const TextStyle(
+        color: AppColors.grayscaleTitle,
+        fontSize: 20,
+      ),
+      decoration: InputDecoration(
+        filled: false,
+        hintText: hintText,
+        hintStyle: const TextStyle(
+          color: AppColors.grayscalePlaceholder,
+          fontSize: 20,
+        ),
+        border: InputBorder.none,
+        enabledBorder: const OutlineInputBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(12.0),
+          ),
+          borderSide: BorderSide(
+            color: AppColors.grayscalePlaceholder,
+          ),
+        ),
+        errorBorder: const OutlineInputBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(12.0),
+          ),
+          borderSide: BorderSide(
+            color: AppColors.stateErrorBase,
           ),
         ),
       ),

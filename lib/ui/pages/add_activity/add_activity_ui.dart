@@ -33,7 +33,7 @@ class _AddActivityPageState extends State<AddActivityPage> {
     return Scaffold(
       // extendBody: true,
       appBar: AppBarWithCross(
-        title: 'Tambah Laporan Aktivitas',
+        title: StringConstant.addActivityTitle,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -80,7 +80,10 @@ class _AddActivityPageState extends State<AddActivityPage> {
       bottomNavigationBar: BottomNavigationBarButton(
         title: 'Kirim',
         onPressed: () {
-          if (_fbKey.currentState?.saveAndValidate() ?? false) {
+          if (_fbKey.currentState?.saveAndValidate(
+                autoScrollWhenFocusOnInvalid: true,
+              ) ??
+              false) {
             debugPrint(_fbKey.currentState?.value.toString());
           } else {
             debugPrint(_fbKey.currentState?.value.toString());

@@ -88,43 +88,15 @@ class AddActivityForm extends StatelessWidget {
               const SizedBox(
                 height: 8,
               ),
-              FormBuilderTextField(
-                name: 'description',
+              FleetimeTextFieldReuseable(
+                hintText: 'Keterangan',
+                name: 'keterangan',
                 maxLines: 5,
                 validator: FormBuilderValidators.compose([
                   FormBuilderValidators.required(
                     errorText: 'Keterangan tidak boleh kosong',
                   ),
                 ]),
-                style: const TextStyle(
-                  color: AppColors.grayscaleTitle,
-                  fontSize: 20,
-                ),
-                decoration: const InputDecoration(
-                  filled: false,
-                  hintText: 'Keterangan',
-                  hintStyle: TextStyle(
-                    color: AppColors.grayscalePlaceholder,
-                    fontSize: 20,
-                  ),
-                  border: InputBorder.none,
-                  enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(12.0),
-                    ),
-                    borderSide: BorderSide(
-                      color: AppColors.grayscalePlaceholder,
-                    ),
-                  ),
-                  errorBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(12.0),
-                    ),
-                    borderSide: BorderSide(
-                      color: AppColors.stateErrorBase,
-                    ),
-                  ),
-                ),
               ),
             ],
           ),
