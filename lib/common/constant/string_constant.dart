@@ -83,4 +83,13 @@ class StringConstant {
   static const String addActivityTimeEndLabel = 'Jam Selesai';
   static const String addActivityTakePhoto = 'Ambil Gambar';
   static const String addActivityDescription = 'Keterangan';
+  static const String addActivityButtonAdd = 'Kirim';
+
+  // Tambah Visit Kerja Page Constant
+  static const String addVisitTitle = 'Visit Kerja';
+  static const String addVisitDestination = 'Pilih Tujuan';
+  static const String addVisitLocation = 'Nama Lokasi';
+  static const String addVisitDate = 'Tanggal Visit';
+  static const String addVisitScanBarcode = 'Scan Barcode ini';
+  static const String addVisitButton = 'Visit';
 }

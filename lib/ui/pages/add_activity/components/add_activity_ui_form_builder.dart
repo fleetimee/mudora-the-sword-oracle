@@ -33,7 +33,7 @@ class AddActivityForm extends StatelessWidget {
               const SizedBox(
                 height: 8,
               ),
-              FleetimeDatePickerReuseable(
+              FleetimeTimePickerReuseable(
                 name: 'jam_mulai',
                 validator: FormBuilderValidators.compose([
                   FormBuilderValidators.required(
@@ -55,7 +55,7 @@ class AddActivityForm extends StatelessWidget {
               const SizedBox(
                 height: 8,
               ),
-              FleetimeDatePickerReuseable(
+              FleetimeTimePickerReuseable(
                 name: 'jam_selesai',
                 validator: FormBuilderValidators.compose([
                   FormBuilderValidators.required(

@@ -31,7 +31,6 @@ class _AddActivityPageState extends State<AddActivityPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // extendBody: true,
       appBar: AppBarWithCross(
         title: StringConstant.addActivityTitle,
       ),
@@ -78,7 +77,7 @@ class _AddActivityPageState extends State<AddActivityPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBarButton(
-        title: 'Kirim',
+        title: StringConstant.addActivityButton,
         onPressed: () {
           if (_fbKey.currentState?.saveAndValidate(
                 autoScrollWhenFocusOnInvalid: true,

@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_image_picker/form_builder_image_picker.dart';
 
-class FleetimeDatePickerReuseable extends StatelessWidget {
-  const FleetimeDatePickerReuseable({
+class FleetimeTimePickerReuseable extends StatelessWidget {
+  const FleetimeTimePickerReuseable({
     super.key,
     required this.name,
     this.onChanged,
@@ -167,13 +167,28 @@ class FleetimeTextFieldReuseable extends StatelessWidget {
           color: AppColors.grayscalePlaceholder,
           fontSize: 20,
         ),
-        border: InputBorder.none,
+        border: const OutlineInputBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(12.0),
+          ),
+          borderSide: BorderSide(
+            color: AppColors.grayscalePlaceholder,
+          ),
+        ),
         enabledBorder: const OutlineInputBorder(
           borderRadius: BorderRadius.all(
             Radius.circular(12.0),
           ),
           borderSide: BorderSide(
             color: AppColors.grayscalePlaceholder,
+          ),
+        ),
+        focusedBorder: const OutlineInputBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(12.0),
+          ),
+          borderSide: BorderSide(
+            color: AppColors.primaryBlue,
           ),
         ),
         errorBorder: const OutlineInputBorder(
