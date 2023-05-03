@@ -92,4 +92,12 @@ class StringConstant {
   static const String addVisitDate = 'Tanggal Visit';
   static const String addVisitScanBarcode = 'Scan Barcode ini';
   static const String addVisitButton = 'Visit';
+
+  // Tambah Lembur Page Constant
+  static const String addOvertimeTitle = 'Tambah Pengajuan Lembur';
+  static const String addOvertimeDate = 'Tanggal Ijin';
+  static const String addOvertimeStartTime = 'Jam Mulai';
+  static const String addOvertimeEndTime = 'Jam Selesai';
+  static const String addOvertimeTakePicture = 'Ambil Gambar';
+  static const String addOvertimeDescription = 'Keterangan';
 }

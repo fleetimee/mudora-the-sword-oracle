@@ -17,6 +17,7 @@ class AddActivityPage extends StatefulWidget {
 }
 
 class _AddActivityPageState extends State<AddActivityPage> {
+  // ignore: unused_field
   Time _time = Time(hour: 11, minute: 30, second: 20);
   bool iosStyle = true;
 

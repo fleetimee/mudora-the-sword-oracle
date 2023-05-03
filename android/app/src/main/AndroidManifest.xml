@@ -1,6 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fleetime_hris">
    <application
+       android:enableOnBackInvokedCallback="true"
         android:label="fleetime_hris"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
