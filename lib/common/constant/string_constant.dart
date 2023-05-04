@@ -62,7 +62,7 @@ class StringConstant {
   static const String menuShift = 'Shift';
   static const String menuGaji = 'Gaji';
   static const String menuAktivitas = 'Aktivitas';
-  static const String menuReimburse = 'Reimburse';
+  static const String menuReimburse = 'Reimburs';
 
   static const String newsTitle = 'Berita';
   static const String moreNews = 'Lihat Semua';

@@ -32,12 +32,15 @@ class HomeMenuCard extends StatelessWidget {
         const SizedBox(
           height: 10,
         ),
-        Text(
-          listViewMenu[index].menuName,
-          style: const TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.w600,
-            color: AppColors.grayscaleTitle,
+        Expanded(
+          child: Text(
+            listViewMenu[index].menuName,
+            style: const TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.w600,
+              color: AppColors.grayscaleTitle,
+            ),
+            textAlign: TextAlign.center,
           ),
         ),
       ],

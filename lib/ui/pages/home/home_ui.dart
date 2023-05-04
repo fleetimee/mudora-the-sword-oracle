@@ -17,134 +17,186 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: const Color(0xFFF9FBFD),
-        body: Center(
-          child: Scrollbar(
-            child: SingleChildScrollView(
-              // normal scroll physics
-              physics: const BouncingScrollPhysics(),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 20.0,
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    const HomeGreetingCard(),
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    const HomeShiftCard(
-                      shiftName: StringConstant.morningShift,
-                      shiftTime: StringConstant.morningTime,
-                      shiftImage: 'assets/images/home_day.png',
-                    ),
-                    const SizedBox(
-                      height: 5,
-                    ),
-                    SizedBox(
-                      height: 280,
-                      child: GridView.builder(
-                        physics: const NeverScrollableScrollPhysics(),
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2,
-                          childAspectRatio: 1.5,
-                          mainAxisSpacing: 10,
-                        ),
-                        itemCount: listAllHomeCard.length,
-                        itemBuilder: (context, index) {
-                          return HomeStatCard(
-                            index: index,
-                          );
-                        },
+          backgroundColor: const Color(0xFFF9FBFD),
+          body: Center(
+            child: Scrollbar(
+              child: SingleChildScrollView(
+                // normal scroll physics
+                physics: const BouncingScrollPhysics(),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 20.0,
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(
+                        height: 20,
                       ),
-                    ),
-                    SizedBox(
-                      height: 250,
-                      child: GridView.builder(
-                        physics: const NeverScrollableScrollPhysics(),
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 4,
-                          childAspectRatio: 0.9,
-                          mainAxisSpacing: 16,
-                        ),
-                        itemCount: listViewMenu.length,
-                        itemBuilder: (context, index) {
-                          return HomeMenuCard(
-                            index: index,
-                          );
-                        },
+                      const HomeGreetingCard(),
+                      const SizedBox(
+                        height: 20,
                       ),
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 15),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: const [
-                          Text(
-                            StringConstant.newsTitle,
-                            style: TextStyle(
-                              fontSize: 22,
-                              fontWeight: FontWeight.bold,
-                              color: AppColors.grayscaleTitle,
-                            ),
+                      const HomeShiftCard(
+                        shiftName: StringConstant.morningShift,
+                        shiftTime: StringConstant.morningTime,
+                        shiftImage: 'assets/images/home_day.png',
+                      ),
+                      const SizedBox(
+                        height: 5,
+                      ),
+                      SizedBox(
+                        height: 280,
+                        child: GridView.builder(
+                          physics: const NeverScrollableScrollPhysics(),
+                          gridDelegate:
+                              const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                            childAspectRatio: 1.2,
+                            mainAxisSpacing: 10,
                           ),
-                          Text(
-                            StringConstant.moreNews,
-                            style: TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.w400,
-                              color: AppColors.grayscaleBody,
-                            ),
+                          itemCount: listAllHomeCard.length,
+                          itemBuilder: (context, index) {
+                            return HomeStatCard(
+                              index: index,
+                            );
+                          },
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      SizedBox(
+                        height: 250,
+                        child: GridView.builder(
+                          physics: const NeverScrollableScrollPhysics(),
+                          gridDelegate:
+                              const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 4,
+                            childAspectRatio: 0.6,
+                            mainAxisSpacing: 16,
+                            crossAxisSpacing: 24,
                           ),
-                        ],
+                          itemCount: listViewMenu.length,
+                          itemBuilder: (context, index) {
+                            return HomeMenuCard(
+                              index: index,
+                            );
+                          },
+                        ),
                       ),
-                    ),
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 10),
-                      child: ListView.separated(
-                        physics: const NeverScrollableScrollPhysics(),
-                        shrinkWrap: true,
-                        separatorBuilder: (context, index) {
-                          return const SizedBox(
-                            height: 40,
-                          );
-                        },
-                        itemCount: newsList.length,
-                        itemBuilder: (context, index) {
-                          return HomeNewsCard(
-                            newsTitle: newsList[index].newsTitle,
-                            newsDate: newsList[index].newsDate,
-                            authorImagePath: newsList[index].newsAuthorImage,
-                            authorName: newsList[index].newsAuthor,
-                            newsImagePath: newsList[index].newsImage,
-                            newsReadTime: newsList[index].newsReadTime,
-                          );
-                        },
+                      const SizedBox(
+                        height: 10,
                       ),
-                    ),
-                    const SizedBox(
-                      height: 100,
-                    ),
-                  ],
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: const [
+                            Text(
+                              StringConstant.newsTitle,
+                              style: TextStyle(
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold,
+                                color: AppColors.grayscaleTitle,
+                              ),
+                            ),
+                            Text(
+                              StringConstant.moreNews,
+                              style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400,
+                                color: AppColors.grayscaleBody,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        child: ListView.separated(
+                          physics: const NeverScrollableScrollPhysics(),
+                          shrinkWrap: true,
+                          separatorBuilder: (context, index) {
+                            return const SizedBox(
+                              height: 40,
+                            );
+                          },
+                          itemCount: newsList.length,
+                          itemBuilder: (context, index) {
+                            return HomeNewsCard(
+                              newsTitle: newsList[index].newsTitle,
+                              newsDate: newsList[index].newsDate,
+                              authorImagePath: newsList[index].newsAuthorImage,
+                              authorName: newsList[index].newsAuthor,
+                              newsImagePath: newsList[index].newsImage,
+                              newsReadTime: newsList[index].newsReadTime,
+                            );
+                          },
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 50,
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
           ),
-        ),
-      ),
+          bottomNavigationBar: BottomNavigationBar(
+            backgroundColor: Colors.white,
+            type: BottomNavigationBarType.fixed,
+            showSelectedLabels: true,
+            showUnselectedLabels: false,
+            selectedLabelStyle: const TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w600,
+            ),
+            items: [
+              BottomNavigationBarItem(
+                icon: Image.asset(
+                  'assets/images/bottombar_home.png',
+                  width: 24,
+                  fit: BoxFit.contain,
+                ),
+                label: 'Beranda',
+                tooltip: 'Beranda',
+              ),
+              const BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.calendar_today,
+                  color: AppColors.grayscaleBody,
+                ),
+                label: 'Calendar',
+              ),
+              const BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.fingerprint,
+                  color: AppColors.grayscaleBody,
+                ),
+                label: 'Notification',
+              ),
+              const BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.person,
+                  color: AppColors.grayscaleBody,
+                ),
+                label: 'Profile',
+              ),
+              const BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.person,
+                  color: AppColors.grayscaleBody,
+                ),
+                label: 'Profile',
+              ),
+            ],
+          )),
     );
   }
 }
