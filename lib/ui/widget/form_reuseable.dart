@@ -145,12 +145,16 @@ class FleetimeTextFieldReuseable extends StatelessWidget {
     required this.maxLines,
     this.validator,
     required this.hintText,
+    this.inputFormatters,
+    this.keyboardType,
   });
 
   final String name;
   final int maxLines;
   final String? Function(String?)? validator;
   final String hintText;
+  final List<TextInputFormatter>? inputFormatters;
+  final TextInputType? keyboardType;
 
   @override
   Widget build(BuildContext context) {
@@ -158,6 +162,8 @@ class FleetimeTextFieldReuseable extends StatelessWidget {
       name: name,
       maxLines: maxLines,
       validator: validator,
+      keyboardType: keyboardType,
+      inputFormatters: inputFormatters,
       style: const TextStyle(
         color: AppColors.grayscaleTitle,
         fontSize: 20,

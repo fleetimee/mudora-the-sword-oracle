@@ -100,4 +100,17 @@ class StringConstant {
   static const String addOvertimeEndTime = 'Jam Selesai';
   static const String addOvertimeTakePicture = 'Ambil Gambar';
   static const String addOvertimeDescription = 'Keterangan';
+
+  // Tambah Shift Page Constant
+  static const String addShiftTitle = 'Tambah Shift';
+  static const String addShiftSelector = 'Pilih Shift';
+  static const String addShiftDescription = 'Keterangan';
+  static const String addShiftButton = 'Kirim';
+
+  // Tambah Reimbursement Page Constant
+  static const String addReimbursementTitle = 'Tambah Reimbursement';
+  static const String addReimbursementSelector = 'Pilih Reimbursement';
+  static const String addReimbursementName = 'Nama Reimbursement';
+  static const String addReimbursementQuantity = 'Nominal';
+  static const String addReimbursementDescription = 'Keterangan';
 }
