@@ -126,4 +126,18 @@ class StringConstant {
   static const String successTitle = 'Aktivitas Sukses';
   static const String successSubtitle =
       'Terima Kasih Aktivitas Kamu Berhasil Diproses';
+
+  // Maps Presence Page Constant
+  static const String mapsPresenceTitle = 'Presensi';
+  static const String mapsPresenceFaceId = 'ID Wajah';
+  static const String mapsPresenceFaceIdHint =
+      'Setelah lokasi berhasil terdeteksi, pemindai akan otomatis memindai wajah anda';
+  static const String mapsPresenceLocation = 'Lokasi';
+  static const String mapsPresenceLocationHint =
+      'Jl. Letnan Jenderal S. Parman No.76, Lempongsari, Lantai Dua, Kota Semarang, Jawa Tengah 50232';
+  static const String mapsPresenceSelfie = 'Selfie';
+  static const String mapsPresenceSelfieHint =
+      'Sebagai bukti bahwa anda telah melakukan presensi di kantor tanpa diwakili orang lain.';
+  static const String mapsPresenceWarning =
+      'Pastikan wajah anda terlihat jelas.';
 }

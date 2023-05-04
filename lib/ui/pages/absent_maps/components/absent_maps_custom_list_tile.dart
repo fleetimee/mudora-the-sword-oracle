@@ -63,6 +63,7 @@ class FleetimeCustomListTile extends StatelessWidget {
               activeTrackColor: AppColors.stateErrorBase,
               inactiveThumbColor: Colors.white.withOpacity(0.5),
               inactiveTrackColor: AppColors.stateSuccessBase,
+              materialTapTargetSize: MaterialTapTargetSize.padded,
             ),
           ),
         ],

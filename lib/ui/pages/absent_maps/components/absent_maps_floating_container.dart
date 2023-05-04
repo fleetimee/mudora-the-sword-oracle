@@ -31,7 +31,6 @@ class _AbsentMapFloatingContainerState
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Make a container for icon that centering the maps and make it clickable
             GestureDetector(
               onTap: () {},
               child: Align(
@@ -126,7 +125,7 @@ class _AbsentMapFloatingContainerState
                       color: AppColors.stateSuccessBase,
                       fontSize: 14.0,
                     ),
-                    imagePath: 'assets/images/profile_jabatan.png',
+                    imagePath: 'assets/images/absent_maps_timer.png',
                     switchInitialValue: widget._outPresence,
                     switchOnChanged: (value) {
                       setState(() {
