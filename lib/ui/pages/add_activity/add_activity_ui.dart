@@ -8,8 +8,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 
 class AddActivityPage extends StatefulWidget {
-  static const String routeName = '/add_activity';
-
   const AddActivityPage({super.key});
 
   @override

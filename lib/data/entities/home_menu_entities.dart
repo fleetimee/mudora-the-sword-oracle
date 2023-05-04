@@ -3,44 +3,44 @@ import 'package:fleetime_hris/common/constant/string_constant.dart';
 class HomeMenuEntities {
   final String menuName;
   final String imagePath;
-  final void Function()? onPressed;
+  final String routeName;
 
   const HomeMenuEntities({
     required this.menuName,
     required this.imagePath,
-    this.onPressed,
+    required this.routeName,
   });
 }
 
 final List<HomeMenuEntities> listViewMenu = [
-  HomeMenuEntities(
+  const HomeMenuEntities(
     menuName: StringConstant.menuIzin,
     imagePath: 'assets/images/home_ijin.png',
-    onPressed: () {},
+    routeName: '/add_permission',
   ),
-  HomeMenuEntities(
+  const HomeMenuEntities(
     menuName: StringConstant.menuLembur,
     imagePath: 'assets/images/home_lembur.png',
-    onPressed: () {},
+    routeName: '/add_overtime',
   ),
-  HomeMenuEntities(
+  const HomeMenuEntities(
     menuName: StringConstant.menuShift,
     imagePath: 'assets/images/home_shift.png',
-    onPressed: () {},
+    routeName: '/add_shift',
   ),
-  HomeMenuEntities(
+  const HomeMenuEntities(
     menuName: StringConstant.menuGaji,
     imagePath: 'assets/images/home_gaji.png',
-    onPressed: () {},
+    routeName: '',
   ),
-  HomeMenuEntities(
+  const HomeMenuEntities(
     menuName: StringConstant.menuAktivitas,
     imagePath: 'assets/images/home_aktivitas.png',
-    onPressed: () {},
+    routeName: '/add_activity',
   ),
-  HomeMenuEntities(
+  const HomeMenuEntities(
     menuName: StringConstant.menuReimburse,
     imagePath: 'assets/images/home_reimbursement.png',
-    onPressed: () {},
+    routeName: '/add_reimbursement',
   )
 ];

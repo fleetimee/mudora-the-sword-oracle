@@ -1,3 +1,4 @@
+import 'package:fleetime_hris/common/routes/routes.dart';
 import 'package:fleetime_hris/common/themes/theme_data.dart';
 import 'package:fleetime_hris/ui/pages/home/home_ui.dart';
 import 'package:flutter/material.dart';
@@ -39,6 +40,7 @@ class MyApp extends StatelessWidget {
         Locale('id', 'ID'),
       ],
       locale: const Locale('id', 'ID'),
+      routes: routes,
     );
   }
 }

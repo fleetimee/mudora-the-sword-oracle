@@ -17,7 +17,14 @@ class HomeMenuCard extends StatelessWidget {
       children: [
         InkWell(
           borderRadius: BorderRadius.circular(100),
-          onTap: listViewMenu[index].onPressed,
+          onTap: () {
+            listViewMenu[index].routeName != ''
+                ? Navigator.pushNamed(
+                    context,
+                    listViewMenu[index].routeName,
+                  )
+                : null;
+          },
           highlightColor: Colors.red,
           child: CircleAvatar(
             radius: 35,

@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
                         height: 5,
                       ),
                       SizedBox(
-                        height: 280,
+                        height: MediaQuery.of(context).size.height * 0.40,
                         child: GridView.builder(
                           physics: const NeverScrollableScrollPhysics(),
                           gridDelegate:
@@ -65,7 +65,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(
-                        height: 20,
+                        height: 10,
                       ),
                       SizedBox(
                         height: 250,
@@ -93,8 +93,8 @@ class HomePage extends StatelessWidget {
                         padding: const EdgeInsets.symmetric(horizontal: 15),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
-                            Text(
+                          children: [
+                            const Text(
                               StringConstant.newsTitle,
                               style: TextStyle(
                                 fontSize: 22,
@@ -102,12 +102,21 @@ class HomePage extends StatelessWidget {
                                 color: AppColors.grayscaleTitle,
                               ),
                             ),
-                            Text(
-                              StringConstant.moreNews,
-                              style: TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w400,
-                                color: AppColors.grayscaleBody,
+                            InkWell(
+                              onTap: () {
+                                Navigator.of(context).pushNamed(
+                                  '/news_announcement',
+                                );
+                              },
+                              child: const Text(
+                                StringConstant.moreNews,
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w400,
+                                  color: AppColors.primaryBlue,
+                                  decoration: TextDecoration.underline,
+                                  decorationColor: AppColors.primaryBlue,
+                                ),
                               ),
                             ),
                           ],
@@ -152,7 +161,7 @@ class HomePage extends StatelessWidget {
             backgroundColor: Colors.white,
             type: BottomNavigationBarType.fixed,
             showSelectedLabels: true,
-            showUnselectedLabels: false,
+            showUnselectedLabels: true,
             selectedLabelStyle: const TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.w600,
@@ -167,33 +176,41 @@ class HomePage extends StatelessWidget {
                 label: 'Beranda',
                 tooltip: 'Beranda',
               ),
-              const BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.calendar_today,
-                  color: AppColors.grayscaleBody,
+              BottomNavigationBarItem(
+                icon: Image.asset(
+                  'assets/images/bottombar_home.png',
+                  width: 24,
+                  fit: BoxFit.contain,
                 ),
-                label: 'Calendar',
+                label: 'Beranda',
+                tooltip: 'Beranda',
               ),
-              const BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.fingerprint,
-                  color: AppColors.grayscaleBody,
+              BottomNavigationBarItem(
+                icon: Image.asset(
+                  'assets/images/bottombar_home.png',
+                  width: 24,
+                  fit: BoxFit.contain,
                 ),
-                label: 'Notification',
+                label: 'Beranda',
+                tooltip: 'Beranda',
               ),
-              const BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.person,
-                  color: AppColors.grayscaleBody,
+              BottomNavigationBarItem(
+                icon: Image.asset(
+                  'assets/images/bottombar_home.png',
+                  width: 24,
+                  fit: BoxFit.contain,
                 ),
-                label: 'Profile',
+                label: 'Beranda',
+                tooltip: 'Beranda',
               ),
-              const BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.person,
-                  color: AppColors.grayscaleBody,
+              BottomNavigationBarItem(
+                icon: Image.asset(
+                  'assets/images/bottombar_home.png',
+                  width: 24,
+                  fit: BoxFit.contain,
                 ),
-                label: 'Profile',
+                label: 'Beranda',
+                tooltip: 'Beranda',
               ),
             ],
           )),

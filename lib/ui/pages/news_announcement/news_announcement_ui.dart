@@ -42,6 +42,7 @@ class _NewsAnnouncementPageState extends State<NewsAnnouncementPage>
             indicatorSize: TabBarIndicatorSize.tab,
             isScrollable: false,
             unselectedLabelColor: AppColors.grayscalePlaceholder,
+            indicatorColor: AppColors.primaryBlue,
             controller: _tabController,
             tabs: const [
               Tab(
