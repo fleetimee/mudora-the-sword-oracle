@@ -114,6 +114,14 @@ class StringConstant {
   static const String addReimbursementQuantity = 'Nominal';
   static const String addReimbursementDescription = 'Keterangan';
 
+  // Tambah Izin Page Constant
+  static const String addPermissionTitle = 'Tambah Pengajuan Izin';
+  static const String addPermissionType = 'Jenis Izin';
+  static const String addPermissionTypeHint = 'Pilih Jenis Izin';
+  static const String addPermissionDate = 'Tanggal Izin';
+  static const String addPermissionDateHint = 'DD/MM/YYYY';
+  static const String addPermissionDescription = 'Keterangan';
+
   // Success Page Constant
   static const String successTitle = 'Aktivitas Sukses';
   static const String successSubtitle =
