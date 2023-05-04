@@ -1,5 +1,5 @@
 import 'package:fleetime_hris/common/themes/theme_data.dart';
-import 'package:fleetime_hris/ui/pages/add_reimbursement/add_reimbursement_ui.dart';
+import 'package:fleetime_hris/ui/pages/success/success_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       ),
       title: 'Flutter Demo',
       theme: lightTheme,
-      home: const AddReimbursementPage(),
+      home: const SuccessPage(),
       debugShowCheckedModeBanner: false,
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,

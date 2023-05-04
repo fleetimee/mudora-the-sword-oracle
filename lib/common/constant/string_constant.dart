@@ -113,4 +113,9 @@ class StringConstant {
   static const String addReimbursementName = 'Nama Reimbursement';
   static const String addReimbursementQuantity = 'Nominal';
   static const String addReimbursementDescription = 'Keterangan';
+
+  // Success Page Constant
+  static const String successTitle = 'Aktivitas Sukses';
+  static const String successSubtitle =
+      'Terima Kasih Aktivitas Kamu Berhasil Diproses';
 }
