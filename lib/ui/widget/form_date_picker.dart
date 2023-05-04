@@ -34,22 +34,6 @@ class _FleetimeDatePickerState extends State<FleetimeDatePicker> {
     });
   }
 
-  DateTime? _timeOfDayToUtc(value) {
-    if (value == null) {
-      return null;
-    }
-    final now = DateTime.now().toUtc();
-    final dateTime = DateTime(
-      now.year,
-      now.month,
-      now.day,
-      value.hour,
-      value.minute,
-    );
-    final gmtPlus7 = dateTime.add(const Duration(hours: 7));
-    return gmtPlus7;
-  }
-
   @override
   void initState() {
     super.initState();
