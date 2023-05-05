@@ -162,6 +162,8 @@ class _LoginPageState extends State<LoginPage> {
         onPressed: () {
           if (_formKey.currentState?.saveAndValidate() ?? false) {
             debugPrint(_formKey.currentState?.value.toString());
+
+            Navigator.pushNamed(context, '/home_page');
           } else {
             debugPrint(_formKey.currentState?.value.toString());
             debugPrint('validation failed');

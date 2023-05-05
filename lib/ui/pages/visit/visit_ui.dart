@@ -2,6 +2,7 @@ import 'package:fleetime_hris/common/constant/color_constant.dart';
 import 'package:fleetime_hris/data/entities/visit_card_entities.dart';
 import 'package:fleetime_hris/ui/pages/visit/components/visit_ui_card.dart';
 import 'package:fleetime_hris/ui/widget/appbar.dart';
+import 'package:fleetime_hris/ui/widget/bottom_navigation_bar_router.dart';
 import 'package:flutter/material.dart';
 
 class VisitPage extends StatelessWidget {
@@ -11,12 +12,16 @@ class VisitPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int selectedIndex = 1;
+
     return Scaffold(
       appBar: AppBarDefault(
         title: 'Visit',
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/add_visit');
+            },
             icon: const Icon(
               Icons.add,
               color: AppColors.primaryBlue,
@@ -36,6 +41,9 @@ class VisitPage extends StatelessWidget {
             index: index,
           );
         },
+      ),
+      bottomNavigationBar: FleetimeBottomNavBar(
+        index: selectedIndex,
       ),
     );
   }

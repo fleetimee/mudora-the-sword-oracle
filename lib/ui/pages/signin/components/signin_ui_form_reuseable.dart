@@ -33,6 +33,7 @@ class LoginPageForm extends StatelessWidget {
           fontWeight: FontWeight.w400,
           color: AppColors.grayscalePlaceholder,
         ),
+        filled: false,
         border: InputBorder.none,
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8.0),

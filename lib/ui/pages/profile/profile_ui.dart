@@ -3,6 +3,7 @@ import 'package:fleetime_hris/common/constant/string_constant.dart';
 import 'package:fleetime_hris/data/entities/profile_entities.dart';
 import 'package:fleetime_hris/ui/pages/profile/components/profile_ui_listtile.dart';
 import 'package:fleetime_hris/ui/widget/appbar.dart';
+import 'package:fleetime_hris/ui/widget/bottom_navigation_bar_router.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -12,6 +13,8 @@ class ProfilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int selectedIndex = 4;
+
     return Scaffold(
       appBar: AppBarDefault(
         title: StringConstant.profileTitle,
@@ -151,6 +154,9 @@ class ProfilePage extends StatelessWidget {
             ),
           ],
         ),
+      ),
+      bottomNavigationBar: FleetimeBottomNavBar(
+        index: selectedIndex,
       ),
     );
   }
