@@ -7,6 +7,7 @@ import 'package:fleetime_hris/ui/pages/add_shift/add_shift_ui.dart';
 import 'package:fleetime_hris/ui/pages/home/home_ui.dart';
 import 'package:fleetime_hris/ui/pages/news_announcement/news_announcement_ui.dart';
 import 'package:fleetime_hris/ui/pages/presence/presence_ui.dart';
+import 'package:fleetime_hris/ui/pages/presence_history/presence_history_ui.dart';
 import 'package:fleetime_hris/ui/pages/profile/profile_ui.dart';
 import 'package:fleetime_hris/ui/pages/visit/visit_ui.dart';
 import 'package:flutter/material.dart';
@@ -26,4 +27,5 @@ final Map<String, WidgetBuilder> routes = {
   '/add_visit': (context) => const AddVisitPage(),
   '/news_announcement': (context) => const NewsAnnouncementPage(),
   '/absent_map': (context) => const AbsentMapPage(),
+  '/presence_history': (context) => const PresenceHistoryPage()
 };

@@ -140,4 +140,41 @@ class StringConstant {
       'Sebagai bukti bahwa anda telah melakukan presensi di kantor tanpa diwakili orang lain.';
   static const String mapsPresenceWarning =
       'Pastikan wajah anda terlihat jelas.';
+
+  // Presence Data Page Constant
+  static const String presenceDataTitle = 'Data Absen';
+  static const String presenceDataSummary = 'Ringkasan';
+  static const String presenceDataAvailable = 'Hadir';
+  static const String presenceDataSick = 'Sakit';
+  static const String presenceDataAlpha = 'Alpha';
+  static const String presenceDataPermit = 'Izin';
+  static const String presenceDataOvertime = 'Lembur';
+  static const String presenceDataHomeEarly = 'Pulang Cepat';
+  static const String presenceDataCuti = 'Cuti';
+  static const String presenceDataLate = 'Terlambat';
+
+  static const String presenceDataPresenceRecap = 'Rekap Absensi';
+  static const String presenceDataPresenceRecapHint = 'Rekap Absensi';
+  static const String presenceDataPresenceHistory = 'Riwayat Absensi';
+  static const String presenceDataPresenceHistoryHint = 'Riwayat Absensi';
+  static const String presenceDataPermitRecap = 'Rekap Izin';
+  static const String presenceDataPermitRecapHint =
+      'Data Izin / Cuti yang sudah disetujui';
+  static const String presenceDataOvertimeRecap = 'Rekap Lembur';
+  static const String presenceDataOvertimeRecapHint = 'Data Lembur / disetujui';
+  static const String presenceDataSalaryHistory = 'Riwayat Gaji';
+  static const String presenceDataSalaryHistoryHint = 'Data Gaji / Bulan';
+  static const String presenceDataShiftHistory = 'Shift';
+  static const String presenceDataActivityReport = 'Laporan Aktivitas';
+  static const String presenceDataActivityReportHint = 'Data Laporan Aktivitas';
+  static const String presenceDataReimbursement = 'Reimbursement';
+  static const String presenceDataReimbursementHint = 'Data Reimbursement';
+
+  // Presence History Page Constant
+  static const String presenceHistoryTitle = 'Riwayat Absensi';
+  static const String presenceHistoryMyPresence = 'Absensi Saya';
+  static const String presenceHistoryEmployeePresence = 'Absensi Karyawan';
+  static const String presenceHistoryIn = 'Masuk';
+  static const String presenceHistoryOut = 'Pulang';
+  static const String presenceHistoryDescription = 'Keterangan';
 }
