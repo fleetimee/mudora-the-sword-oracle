@@ -177,4 +177,10 @@ class StringConstant {
   static const String presenceHistoryIn = 'Masuk';
   static const String presenceHistoryOut = 'Pulang';
   static const String presenceHistoryDescription = 'Keterangan';
+
+  // Overtime Recap Page Constant
+  static const String overtimeRecapTitle = 'Rekap Lembur';
+  static const String overtimeRecapMyOverTime = 'Lembur Saya';
+  static const String overtimeRecapEmployeeOverTime = 'Lembur Karyawan';
+  static const String overtimeRecapMonth = 'April 2023';
 }
