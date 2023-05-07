@@ -13,4 +13,5 @@ class AppColors {
   static const Color stateSuccessBase = Color(0xFF2DD369);
 
   static const Color stateErrorBase = Color(0xFFFF3E32);
+  static const Color grayscaleStrokeLine = Color(0xFFEAECEE);
 }

@@ -8,10 +8,11 @@ class NewsAnnouncementAnnouncementTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-        child: Image.asset(
-      'assets/images/news_annoncement_illustration.png',
-      height: 200,
-      fit: BoxFit.contain,
-    ));
+      child: Image.asset(
+        'assets/images/news_annoncement_illustration.png',
+        height: 200,
+        fit: BoxFit.contain,
+      ),
+    );
   }
 }

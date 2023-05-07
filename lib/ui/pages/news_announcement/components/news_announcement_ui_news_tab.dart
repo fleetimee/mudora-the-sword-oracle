@@ -12,7 +12,6 @@ class NewsAnnouncementNewsTab extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(20.0),
       child: ListView.separated(
-        physics: const NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         separatorBuilder: (context, index) {
           return const SizedBox(
