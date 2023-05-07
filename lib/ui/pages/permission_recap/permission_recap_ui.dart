@@ -1,18 +1,18 @@
 import 'package:fleetime_hris/common/constant/color_constant.dart';
 import 'package:fleetime_hris/common/constant/string_constant.dart';
-import 'package:fleetime_hris/data/entities/overtime_recap_card_entities.dart';
+import 'package:fleetime_hris/data/entities/permission_recap_entities.dart';
 import 'package:fleetime_hris/ui/pages/overtime_recap/components/overtime_recap_ui_card.dart';
 import 'package:fleetime_hris/ui/widget/appbar.dart';
 import 'package:flutter/material.dart';
 
-class OvertimeRecapPage extends StatefulWidget {
-  const OvertimeRecapPage({super.key});
+class PermissionRecapPage extends StatefulWidget {
+  const PermissionRecapPage({super.key});
 
   @override
-  State<OvertimeRecapPage> createState() => _OvertimeRecapPageState();
+  State<PermissionRecapPage> createState() => _PermissionRecapPageState();
 }
 
-class _OvertimeRecapPageState extends State<OvertimeRecapPage>
+class _PermissionRecapPageState extends State<PermissionRecapPage>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
 
@@ -32,7 +32,7 @@ class _OvertimeRecapPageState extends State<OvertimeRecapPage>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWithBack(
-        title: StringConstant.overtimeRecapTitle,
+        title: StringConstant.permissionRecapTitle,
         actions: [
           IconButton(
             onPressed: () {},
@@ -55,7 +55,7 @@ class _OvertimeRecapPageState extends State<OvertimeRecapPage>
             tabs: const [
               Tab(
                 child: Text(
-                  StringConstant.overtimeRecapMyOverTime,
+                  StringConstant.permissionRecapMyPermission,
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
@@ -64,7 +64,7 @@ class _OvertimeRecapPageState extends State<OvertimeRecapPage>
               ),
               Tab(
                 child: Text(
-                  StringConstant.overtimeRecapEmployeeOverTime,
+                  StringConstant.permissionRecapMyEmployeePermission,
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
@@ -77,12 +77,39 @@ class _OvertimeRecapPageState extends State<OvertimeRecapPage>
             child: TabBarView(
               controller: _tabController,
               children: [
-                const OvertimeRecapMyOvertime(),
+                const PermissionRecapMyPermission(),
                 Center(
-                  child: Image.asset(
-                    'assets/images/fing.png',
-                    height: 300,
-                    fit: BoxFit.contain,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset(
+                        'assets/images/fing.png',
+                        height: 300,
+                        fit: BoxFit.contain,
+                      ),
+                      const SizedBox(height: 20),
+                      const Text(
+                        'Tidak ada Data Izin',
+                        style: TextStyle(
+                          fontSize: 24,
+                          color: AppColors.grayscaleTitle,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 32),
+                        child: Text(
+                          'Silahkan tambahkan data izin terlebih dahulu',
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: AppColors.grayscaleLabel,
+                            height: 1.8,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
@@ -94,8 +121,8 @@ class _OvertimeRecapPageState extends State<OvertimeRecapPage>
   }
 }
 
-class OvertimeRecapMyOvertime extends StatelessWidget {
-  const OvertimeRecapMyOvertime({
+class PermissionRecapMyPermission extends StatelessWidget {
+  const PermissionRecapMyPermission({
     super.key,
   });
 
@@ -116,7 +143,7 @@ class OvertimeRecapMyOvertime extends StatelessWidget {
           const SizedBox(height: 10),
           Expanded(
             child: ListView.separated(
-              itemCount: overtimeRecapList.length,
+              itemCount: permissionRecapList.length,
               shrinkWrap: true,
               separatorBuilder: (context, index) => const SizedBox(
                 height: 20,
@@ -124,11 +151,11 @@ class OvertimeRecapMyOvertime extends StatelessWidget {
               itemBuilder: (context, index) {
                 return OvertimeRecapCard(
                   index: index,
-                  date: overtimeRecapList[index].date,
-                  status: overtimeRecapList[index].status,
-                  overtimeTitle: overtimeRecapList[index].reason,
-                  time: overtimeRecapList[index].time,
-                  startFrom: overtimeRecapList[index].startFrom,
+                  date: permissionRecapList[index].date,
+                  status: permissionRecapList[index].status,
+                  overtimeTitle: permissionRecapList[index].reason,
+                  time: permissionRecapList[index].time,
+                  startFrom: permissionRecapList[index].startFrom,
                 );
               },
             ),

@@ -1,18 +1,18 @@
 import 'package:fleetime_hris/common/constant/color_constant.dart';
 import 'package:fleetime_hris/common/constant/string_constant.dart';
-import 'package:fleetime_hris/data/entities/overtime_recap_card_entities.dart';
+import 'package:fleetime_hris/data/entities/activity_recap_entities.dart';
 import 'package:fleetime_hris/ui/pages/overtime_recap/components/overtime_recap_ui_card.dart';
 import 'package:fleetime_hris/ui/widget/appbar.dart';
 import 'package:flutter/material.dart';
 
-class OvertimeRecapPage extends StatefulWidget {
-  const OvertimeRecapPage({super.key});
+class ActivityRecapPage extends StatefulWidget {
+  const ActivityRecapPage({super.key});
 
   @override
-  State<OvertimeRecapPage> createState() => _OvertimeRecapPageState();
+  State<ActivityRecapPage> createState() => _ActivityRecapPageState();
 }
 
-class _OvertimeRecapPageState extends State<OvertimeRecapPage>
+class _ActivityRecapPageState extends State<ActivityRecapPage>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
 
@@ -32,7 +32,7 @@ class _OvertimeRecapPageState extends State<OvertimeRecapPage>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWithBack(
-        title: StringConstant.overtimeRecapTitle,
+        title: StringConstant.activityRecapTitle,
         actions: [
           IconButton(
             onPressed: () {},
@@ -55,7 +55,7 @@ class _OvertimeRecapPageState extends State<OvertimeRecapPage>
             tabs: const [
               Tab(
                 child: Text(
-                  StringConstant.overtimeRecapMyOverTime,
+                  StringConstant.activityRecapMyActivity,
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
@@ -64,7 +64,7 @@ class _OvertimeRecapPageState extends State<OvertimeRecapPage>
               ),
               Tab(
                 child: Text(
-                  StringConstant.overtimeRecapEmployeeOverTime,
+                  StringConstant.activityRecapMyEmployeeActivity,
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
@@ -77,7 +77,7 @@ class _OvertimeRecapPageState extends State<OvertimeRecapPage>
             child: TabBarView(
               controller: _tabController,
               children: [
-                const OvertimeRecapMyOvertime(),
+                const ActivityRecapMyActivity(),
                 Center(
                   child: Image.asset(
                     'assets/images/fing.png',
@@ -94,8 +94,8 @@ class _OvertimeRecapPageState extends State<OvertimeRecapPage>
   }
 }
 
-class OvertimeRecapMyOvertime extends StatelessWidget {
-  const OvertimeRecapMyOvertime({
+class ActivityRecapMyActivity extends StatelessWidget {
+  const ActivityRecapMyActivity({
     super.key,
   });
 
@@ -116,7 +116,7 @@ class OvertimeRecapMyOvertime extends StatelessWidget {
           const SizedBox(height: 10),
           Expanded(
             child: ListView.separated(
-              itemCount: overtimeRecapList.length,
+              itemCount: activityRecapList.length,
               shrinkWrap: true,
               separatorBuilder: (context, index) => const SizedBox(
                 height: 20,
@@ -124,11 +124,11 @@ class OvertimeRecapMyOvertime extends StatelessWidget {
               itemBuilder: (context, index) {
                 return OvertimeRecapCard(
                   index: index,
-                  date: overtimeRecapList[index].date,
-                  status: overtimeRecapList[index].status,
-                  overtimeTitle: overtimeRecapList[index].reason,
-                  time: overtimeRecapList[index].time,
-                  startFrom: overtimeRecapList[index].startFrom,
+                  date: activityRecapList[index].date,
+                  status: activityRecapList[index].status,
+                  overtimeTitle: activityRecapList[index].reason,
+                  time: activityRecapList[index].time,
+                  startFrom: activityRecapList[index].startFrom,
                 );
               },
             ),

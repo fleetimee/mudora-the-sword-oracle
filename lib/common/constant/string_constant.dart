@@ -183,4 +183,14 @@ class StringConstant {
   static const String overtimeRecapMyOverTime = 'Lembur Saya';
   static const String overtimeRecapEmployeeOverTime = 'Lembur Karyawan';
   static const String overtimeRecapMonth = 'April 2023';
+
+  // Permission Recap Page Constant
+  static const String permissionRecapTitle = 'Rekap Izin';
+  static const String permissionRecapMyPermission = 'Izin Saya';
+  static const String permissionRecapMyEmployeePermission = 'Izin Karyawan';
+
+  // Activity Recap Page Constant
+  static const String activityRecapTitle = 'Laporan Aktivitas';
+  static const String activityRecapMyActivity = 'Aktivitas Saya';
+  static const String activityRecapMyEmployeeActivity = 'Aktivitas Karyawan';
 }

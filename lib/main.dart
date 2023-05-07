@@ -1,6 +1,6 @@
 import 'package:fleetime_hris/common/routes/routes.dart';
 import 'package:fleetime_hris/common/themes/theme_data.dart';
-import 'package:fleetime_hris/ui/pages/overtime_recap/overtime_recap_ui.dart';
+import 'package:fleetime_hris/ui/pages/activity_recap/activity_recap.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       ),
       title: 'Flutter Demo',
       theme: lightTheme,
-      home: const OvertimeRecapPage(),
+      home: const ActivityRecapPage(),
       debugShowCheckedModeBanner: false,
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,

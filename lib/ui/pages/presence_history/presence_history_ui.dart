@@ -30,7 +30,7 @@ class _PresenceHistoryPageState extends State<PresenceHistoryPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarWithCross(
+      appBar: AppBarWithBack(
         title: StringConstant.presenceHistoryTitle,
       ),
       body: Column(
