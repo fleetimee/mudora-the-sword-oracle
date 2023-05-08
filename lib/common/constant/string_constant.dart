@@ -193,4 +193,9 @@ class StringConstant {
   static const String activityRecapTitle = 'Laporan Aktivitas';
   static const String activityRecapMyActivity = 'Aktivitas Saya';
   static const String activityRecapMyEmployeeActivity = 'Aktivitas Karyawan';
+
+  // Shift Recap Page Constant
+  static const String shiftRecapTitle = 'Shift';
+  static const String shiftRecapMyShift = 'Jadwal Saya';
+  static const String shiftRecapEmployeeShift = 'Jadwal Karyawan';
 }
