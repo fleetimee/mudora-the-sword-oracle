@@ -27,19 +27,20 @@ class AppBarWithBack extends AppBar {
     Key? key,
     required String title,
     List<Widget>? actions,
+    Color? backgroundColor,
   }) : super(
-          key: key,
-          title: Text(
-            title,
-            style: const TextStyle(
-              color: AppColors.grayscaleTitle,
-              fontWeight: FontWeight.bold,
-              fontSize: 20.0,
-              letterSpacing: 0.5,
+            key: key,
+            title: Text(
+              title,
+              style: const TextStyle(
+                color: AppColors.grayscaleTitle,
+                fontWeight: FontWeight.bold,
+                fontSize: 20.0,
+                letterSpacing: 0.5,
+              ),
             ),
-          ),
-          actions: actions,
-        );
+            actions: actions,
+            backgroundColor: backgroundColor);
 }
 
 class AppBarWithCross extends AppBar {

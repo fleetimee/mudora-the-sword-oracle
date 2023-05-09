@@ -1,6 +1,6 @@
 import 'package:fleetime_hris/common/routes/routes.dart';
 import 'package:fleetime_hris/common/themes/theme_data.dart';
-import 'package:fleetime_hris/ui/pages/reimbursement_recap/reimbursement_recap_ui.dart';
+import 'package:fleetime_hris/ui/pages/salary_history/salary_history_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       ),
       title: 'Flutter Demo',
       theme: lightTheme,
-      home: const ReimbursementRecapPage(),
+      home: const SalaryHistoryPage(),
       debugShowCheckedModeBanner: false,
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
