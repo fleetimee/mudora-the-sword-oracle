@@ -48,9 +48,12 @@ class AppBarWithCross extends AppBar {
     Key? key,
     required String title,
     List<Widget>? actions,
+    bool? centerTitle,
+    Color? backgroundColor,
   }) : super(
           key: key,
-          backgroundColor: Colors.white,
+          centerTitle: centerTitle ?? false,
+          backgroundColor: backgroundColor ?? Colors.white,
           title: Text(
             title,
             style: const TextStyle(
