@@ -37,6 +37,7 @@ dependencies:
   modal_bottom_sheet: ^3.0.0-pre
   responsive_framework: ^1.0.0
   shimmer: ^2.0.0
+  syncfusion_flutter_charts: ^21.2.3
 
 dependency_overrides:
   intl: ^0.18.0
