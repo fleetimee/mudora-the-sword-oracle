@@ -28,8 +28,10 @@ class AppBarWithBack extends AppBar {
     required String title,
     List<Widget>? actions,
     Color? backgroundColor,
+    Widget? leading,
   }) : super(
             key: key,
+            leading: leading,
             title: Text(
               title,
               style: const TextStyle(
