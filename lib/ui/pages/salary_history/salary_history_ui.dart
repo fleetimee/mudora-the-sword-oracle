@@ -99,6 +99,10 @@ class SalaryHistoryPage extends StatelessWidget {
                           ),
                           itemBuilder: (context, index) {
                             return ListTile(
+                              onTap: () {
+                                Navigator.pushNamed(
+                                    context, '/salary_history_detail');
+                              },
                               leading: CircleAvatar(
                                 radius: 22,
                                 backgroundColor: AppColors.grayscaleStrokeLine,

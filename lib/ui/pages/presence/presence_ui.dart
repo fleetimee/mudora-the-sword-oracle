@@ -48,6 +48,12 @@ class PresencePage extends StatelessWidget {
                           height: 24.0,
                         ),
                       ),
+                      onTap: () {
+                        Navigator.pushNamed(
+                          context,
+                          presenceCardEntities[index].routeName,
+                        );
+                      },
                       title: Text(
                         presenceCardEntities[index].cardTitle,
                         style: const TextStyle(
