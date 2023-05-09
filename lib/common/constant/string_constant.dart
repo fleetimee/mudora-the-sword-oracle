@@ -198,4 +198,7 @@ class StringConstant {
   static const String shiftRecapTitle = 'Shift';
   static const String shiftRecapMyShift = 'Jadwal Saya';
   static const String shiftRecapEmployeeShift = 'Jadwal Karyawan';
+
+  // Reimbursement Recap Page Constant
+  static const String reimbursementRecapTitle = 'Reimbursement';
 }

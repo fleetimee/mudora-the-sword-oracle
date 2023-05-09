@@ -1,6 +1,7 @@
 import 'package:fleetime_hris/common/constant/color_constant.dart';
 import 'package:fleetime_hris/common/constant/string_constant.dart';
 import 'package:fleetime_hris/data/entities/shift_recap_entities.dart';
+import 'package:fleetime_hris/ui/pages/shift_recap/components/shift_recap_ui_card.dart';
 import 'package:fleetime_hris/ui/widget/appbar.dart';
 import 'package:flutter/material.dart';
 
@@ -85,70 +86,11 @@ class _ShiftRecapPageState extends State<ShiftRecapPage>
                     ),
                     shrinkWrap: true,
                     itemBuilder: (context, index) {
-                      return Card(
-                        elevation: 0,
-                        shape: const RoundedRectangleBorder(
-                          side: BorderSide(
-                            color: AppColors.grayscalePlaceholder,
-                            width: 0.8,
-                          ),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(10),
-                          ),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(16.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Row(
-                                    children: [
-                                      Image.asset(
-                                        'assets/images/visit_calendar.png',
-                                        height: 25,
-                                        fit: BoxFit.contain,
-                                      ),
-                                      const SizedBox(
-                                        width: 10,
-                                      ),
-                                      Text(
-                                        shiftRecapEntitiesList[index].date,
-                                        style: const TextStyle(
-                                          fontSize: 16,
-                                          color: AppColors.grayscaleBody,
-                                          fontWeight: FontWeight.w400,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  Chip(
-                                    backgroundColor:
-                                        shiftRecapEntitiesList[index].status ==
-                                                'Diterima'
-                                            ? Colors.green.withOpacity(0.2)
-                                            : Colors.red.withOpacity(0.2),
-                                    label: Text(
-                                      shiftRecapEntitiesList[index].status,
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        color: shiftRecapEntitiesList[index]
-                                                    .status ==
-                                                'Diterima'
-                                            ? AppColors.stateSuccessBase
-                                            : AppColors.stateErrorBase,
-                                        fontWeight: FontWeight.w400,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
+                      return ShiftRecapCard(
+                        index: index,
+                        time: shiftRecapEntitiesList[index].shiftTime,
+                        date: shiftRecapEntitiesList[index].date,
+                        status: shiftRecapEntitiesList[index].status,
                       );
                     },
                   ),
