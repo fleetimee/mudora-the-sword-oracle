@@ -16,15 +16,18 @@ class AbsentMapPage extends StatelessWidget {
       appBar: AppBarWithBack(
         backgroundColor: Colors.transparent,
         title: '',
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: const CircleAvatar(
-            backgroundColor: Colors.white,
-            child: Icon(
-              Icons.arrow_back,
-              color: Colors.black,
+        leading: SizedBox(
+          height: 20,
+          child: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const CircleAvatar(
+              backgroundColor: Colors.white,
+              child: Icon(
+                Icons.arrow_back,
+                color: Colors.black,
+              ),
             ),
           ),
         ),
