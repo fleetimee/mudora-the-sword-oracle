@@ -44,28 +44,6 @@ class AddActivityForm extends StatelessWidget {
               const SizedBox(
                 height: 32,
               ),
-              const Text(
-                StringConstant.addActivityTimeEndLabel,
-                style: TextStyle(
-                  color: AppColors.grayscaleLabel,
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(
-                height: 8,
-              ),
-              FleetimeTimePickerReuseable(
-                name: 'jam_selesai',
-                validator: FormBuilderValidators.compose([
-                  FormBuilderValidators.required(
-                    errorText: 'Jam selesai tidak boleh kosong',
-                  ),
-                ]),
-              ),
-              const SizedBox(
-                height: 32,
-              ),
               FleetimeImagePickerReuseable(
                 name: 'foto',
                 validator: FormBuilderValidators.compose([

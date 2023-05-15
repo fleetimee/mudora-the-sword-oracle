@@ -1,6 +1,5 @@
 import 'package:fleetime_hris/common/constant/color_constant.dart';
 import 'package:fleetime_hris/common/constant/string_constant.dart';
-import 'package:fleetime_hris/ui/pages/signin/components/signin_ui_company_logo.dart';
 import 'package:fleetime_hris/ui/pages/signin/components/signin_ui_form_reuseable.dart';
 import 'package:fleetime_hris/ui/widget/bottom_navigation_bar_button.dart';
 import 'package:flutter/material.dart';
@@ -29,26 +28,15 @@ class _LoginPageState extends State<LoginPage> {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.only(top: 16.0),
-                    child: CompanyLogo(
-                      imagePath: "assets/images/login_company_logo.png",
-                    ),
-                  ),
-                  Expanded(
-                    child: Image.asset(
-                      "assets/images/login_illustration.png",
-                      fit: BoxFit.contain,
-                    ),
-                  ),
-                ],
-              ),
+              Center(
+                  child: Image.asset(
+                "assets/images/login_logo.png",
+                fit: BoxFit.contain,
+                height: MediaQuery.of(context).size.height * 0.35,
+              )),
               const SizedBox(height: 8.0),
               Expanded(
                 child: SingleChildScrollView(

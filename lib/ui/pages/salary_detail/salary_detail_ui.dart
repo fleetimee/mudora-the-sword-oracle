@@ -91,18 +91,18 @@ class SalaryDetailPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16.0),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Divider(
+                    Divider(
                       color: Colors.black12,
                       thickness: 0.5,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Text(
                           'Waktu Pengiriman',
                           style: TextStyle(
@@ -119,10 +119,10 @@ class SalaryDetailPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 8.0),
+                    SizedBox(height: 8.0),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Text(
                           'Nama Pengirim',
                           style: TextStyle(
@@ -139,10 +139,10 @@ class SalaryDetailPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 8.0),
+                    SizedBox(height: 8.0),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Text(
                           'Nama Bank',
                           style: TextStyle(
@@ -159,13 +159,13 @@ class SalaryDetailPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 4.0),
-                    const Divider(
+                    SizedBox(height: 4.0),
+                    Divider(
                       color: Colors.black12,
                       thickness: 0.5,
                     ),
-                    const SizedBox(height: 8.0),
-                    const Text(
+                    SizedBox(height: 8.0),
+                    Text(
                       'Detail Lainnya',
                       style: TextStyle(
                         color: AppColors.grayscaleTitle,
@@ -173,10 +173,10 @@ class SalaryDetailPage extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    const SizedBox(height: 8.0),
+                    SizedBox(height: 8.0),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Text(
                           'Gaji Pokok',
                           style: TextStyle(
@@ -193,10 +193,10 @@ class SalaryDetailPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 8.0),
+                    SizedBox(height: 8.0),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Text(
                           'Kehadiran',
                           style: TextStyle(
@@ -213,10 +213,10 @@ class SalaryDetailPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 8.0),
+                    SizedBox(height: 8.0),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Text(
                           'Tunjangan',
                           style: TextStyle(
@@ -233,10 +233,10 @@ class SalaryDetailPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 8.0),
+                    SizedBox(height: 8.0),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Text(
                           'BPJS Kesehatan',
                           style: TextStyle(
@@ -253,10 +253,10 @@ class SalaryDetailPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 8.0),
+                    SizedBox(height: 8.0),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Text(
                           'BP Jamsostek',
                           style: TextStyle(

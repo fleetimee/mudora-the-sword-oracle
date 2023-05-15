@@ -21,10 +21,10 @@ class AddShiftPage extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: FormBuilder(
           key: fbKey,
-          child: Column(
+          child: const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
-            children: const [
+            children: [
               Text(
                 'Add Shift',
                 style: StyleConstant.formLabel,

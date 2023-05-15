@@ -14,12 +14,12 @@ class AddPermissionPage extends StatelessWidget {
       appBar: AppBarWithCross(
         title: StringConstant.addPermissionTitle,
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
+            children: [
               Text(
                 StringConstant.addPermissionType,
                 style: StyleConstant.formLabel,

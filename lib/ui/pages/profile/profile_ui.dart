@@ -54,9 +54,9 @@ class ProfilePage extends StatelessWidget {
                         height: 24.0,
                       ),
                       const SizedBox(width: 8.0),
-                      Column(
+                      const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
+                        children: [
                           Text(
                             StringConstant.profileDepartmentTitle,
                             style: TextStyle(
@@ -92,9 +92,9 @@ class ProfilePage extends StatelessWidget {
                         height: 24.0,
                       ),
                       const SizedBox(width: 8.0),
-                      Column(
+                      const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
+                        children: [
                           Text(
                             StringConstant.profilePositionTitle,
                             style: TextStyle(

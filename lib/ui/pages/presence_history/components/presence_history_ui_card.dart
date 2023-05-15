@@ -111,10 +111,10 @@ class PresenceHistoryCard extends StatelessWidget {
             const SizedBox(
               height: 5,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
-              children: const [
+              children: [
                 Text(
                   StringConstant.presenceHistoryDescription,
                   style: TextStyle(
@@ -161,10 +161,10 @@ class PresenceHistoryCard extends StatelessWidget {
             const SizedBox(
               height: 5,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
-              children: const [
+              children: [
                 Text(
                   StringConstant.presenceHistoryDescription,
                   style: TextStyle(

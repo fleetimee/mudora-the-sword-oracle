@@ -48,10 +48,10 @@ class _PresenceRecapPageState extends State<PresenceRecapPage> {
                     )
                   ],
                 ),
-                Positioned.fill(
+                const Positioned.fill(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
+                    children: [
                       Text(
                         'Total Absensi',
                         style: TextStyle(

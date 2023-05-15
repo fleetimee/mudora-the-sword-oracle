@@ -22,11 +22,12 @@ ThemeData lightTheme = FlexThemeData.light(
     useM2StyleDividerInM3: true,
     inputDecoratorRadius: 7.0,
   ),
-  appBarStyle: FlexAppBarStyle.surface,
+  appBarStyle: FlexAppBarStyle.primary,
   useMaterial3ErrorColors: true,
   visualDensity: FlexColorScheme.comfortablePlatformDensity,
   swapLegacyOnMaterial3: true,
   fontFamily: GoogleFonts.poppins().fontFamily,
+  useMaterial3: true,
 );
 
 ThemeData darkTheme = FlexThemeData.dark(
