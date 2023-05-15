@@ -15,6 +15,7 @@ class AddShiftPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBarWithCross(
+        context: context,
         title: StringConstant.addShiftTitle,
       ),
       body: Padding(

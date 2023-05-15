@@ -13,6 +13,7 @@ class AddReimbursementPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWithCross(
+        context: context,
         title: StringConstant.addReimbursementTitle,
       ),
       body: SingleChildScrollView(

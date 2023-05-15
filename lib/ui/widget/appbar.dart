@@ -51,9 +51,19 @@ class AppBarWithCross extends AppBar {
     required String title,
     List<Widget>? actions,
     bool? centerTitle,
+    required BuildContext context,
     Color? backgroundColor,
   }) : super(
           key: key,
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(
+              Icons.close,
+              color: AppColors.grayscaleTitle,
+            ),
+          ),
           centerTitle: centerTitle ?? false,
           backgroundColor: backgroundColor ?? Colors.white,
           title: Text(

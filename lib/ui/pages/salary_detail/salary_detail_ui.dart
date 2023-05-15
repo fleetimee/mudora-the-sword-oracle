@@ -12,6 +12,7 @@ class SalaryDetailPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.grayscaleBackground,
       appBar: AppBarWithCross(
+        context: context,
         title: 'Detail Gaji',
         centerTitle: true,
         backgroundColor: Colors.transparent,

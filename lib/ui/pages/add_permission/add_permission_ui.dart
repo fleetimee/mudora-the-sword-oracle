@@ -12,6 +12,7 @@ class AddPermissionPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWithCross(
+        context: context,
         title: StringConstant.addPermissionTitle,
       ),
       body: const SingleChildScrollView(

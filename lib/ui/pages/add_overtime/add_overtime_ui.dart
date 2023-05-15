@@ -13,6 +13,7 @@ class AddOvertimePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWithCross(
+        context: context,
         title: StringConstant.addOvertimeTitle,
       ),
       body: SingleChildScrollView(

@@ -14,6 +14,7 @@ class AddVisitPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBarWithCross(
+        context: context,
         title: 'Visit Kerja Lama',
       ),
       body: SingleChildScrollView(
@@ -27,15 +28,16 @@ class AddVisitPage extends StatelessWidget {
       bottomNavigationBar: BottomNavigationBarButton(
         title: StringConstant.addVisitButton,
         onPressed: () {
-          if (fbKey.currentState?.saveAndValidate(
-                autoScrollWhenFocusOnInvalid: true,
-              ) ??
-              false) {
-            debugPrint(fbKey.currentState?.value.toString());
-          } else {
-            debugPrint(fbKey.currentState?.value.toString());
-            debugPrint('validation failed');
-          }
+          // if (fbKey.currentState?.saveAndValidate(
+          //       autoScrollWhenFocusOnInvalid: true,
+          //     ) ??
+          //     false) {
+          //   debugPrint(fbKey.currentState?.value.toString());
+          // } else {
+          //   debugPrint(fbKey.currentState?.value.toString());
+          //   debugPrint('validation failed');
+          // }
+          Navigator.pushNamed(context, '/success_visit');
         },
       ),
     );

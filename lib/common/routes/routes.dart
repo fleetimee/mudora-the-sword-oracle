@@ -5,6 +5,7 @@ import 'package:fleetime_hris/ui/pages/add_overtime/add_overtime_ui.dart';
 import 'package:fleetime_hris/ui/pages/add_permission/add_permission_ui.dart';
 import 'package:fleetime_hris/ui/pages/add_reimbursement/add_reimbursement_ui.dart';
 import 'package:fleetime_hris/ui/pages/add_shift/add_shift_ui.dart';
+import 'package:fleetime_hris/ui/pages/add_visit/add_visit_ui.dart';
 import 'package:fleetime_hris/ui/pages/add_visit/add_visit_ui_new.dart';
 import 'package:fleetime_hris/ui/pages/home/home_ui.dart';
 import 'package:fleetime_hris/ui/pages/news_announcement/news_announcement_ui.dart';
@@ -18,10 +19,9 @@ import 'package:fleetime_hris/ui/pages/reimbursement_recap/reimbursement_recap_u
 import 'package:fleetime_hris/ui/pages/salary_detail/salary_detail_ui.dart';
 import 'package:fleetime_hris/ui/pages/salary_history/salary_history_ui.dart';
 import 'package:fleetime_hris/ui/pages/shift_recap/shift_recap_ui.dart';
+import 'package:fleetime_hris/ui/pages/success_visit/success_visit_ui.dart';
 import 'package:fleetime_hris/ui/pages/visit/visit_ui.dart';
 import 'package:flutter/material.dart';
-
-import '../../ui/pages/add_visit/add_visit_ui.dart';
 
 final Map<String, WidgetBuilder> routes = {
   '/home_page': (context) => const HomePage(),
@@ -46,4 +46,5 @@ final Map<String, WidgetBuilder> routes = {
   '/shift_recap': (context) => const ShiftRecapPage(),
   '/activity_recap': (context) => const ActivityRecapPage(),
   '/reimbursement_recap': (context) => const ReimbursementRecapPage(),
+  '/success_visit': (context) => const SuccessVisitPage(),
 };

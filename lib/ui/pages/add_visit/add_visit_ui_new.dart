@@ -16,6 +16,7 @@ class AddVisitNewPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBarWithCross(
+        context: context,
         title: 'Visit Kerja Baru',
       ),
       body: SingleChildScrollView(

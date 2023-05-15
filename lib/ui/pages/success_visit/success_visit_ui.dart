@@ -1,11 +1,11 @@
 import 'package:fleetime_hris/common/constant/color_constant.dart';
-import 'package:fleetime_hris/common/constant/string_constant.dart';
 import 'package:fleetime_hris/ui/widget/appbar.dart';
 import 'package:fleetime_hris/ui/widget/bottom_navigation_bar_button.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
-class SuccessPage extends StatelessWidget {
-  const SuccessPage({super.key});
+class SuccessVisitPage extends StatelessWidget {
+  const SuccessVisitPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,14 +18,19 @@ class SuccessPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              "assets/images/success_check.png",
+            // Image.asset(
+            //   "assets/images/success_check.png",
+            //   fit: BoxFit.contain,
+            //   height: 75,
+            // ),
+            Lottie.asset(
+              'assets/images/success_visit_thumb.json',
+              height: 100,
               fit: BoxFit.contain,
-              height: 75,
             ),
             const SizedBox(height: 16.0),
             const Text(
-              StringConstant.successTitle,
+              'Terima Kasih!',
               style: TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -35,10 +40,10 @@ class SuccessPage extends StatelessWidget {
             const SizedBox(height: 8.0),
             const Padding(
               padding: EdgeInsets.symmetric(
-                horizontal: 32.0,
+                horizontal: 48.0,
               ),
               child: Text(
-                StringConstant.successSubtitle,
+                'Sudah melakukan visit pada jam 08:00 WIB - 17:00 WIB',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16.0,

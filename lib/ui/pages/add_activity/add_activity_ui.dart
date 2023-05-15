@@ -31,6 +31,7 @@ class _AddActivityPageState extends State<AddActivityPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWithCross(
+        context: context,
         title: StringConstant.addActivityTitle,
       ),
       body: Padding(
