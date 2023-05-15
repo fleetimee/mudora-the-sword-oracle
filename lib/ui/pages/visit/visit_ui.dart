@@ -40,7 +40,15 @@ class _VisitPageState extends State<VisitPage>
         actions: [
           IconButton(
             onPressed: () {
-              Navigator.pushNamed(context, '/add_visit');
+              // Navigator.pushNamed(context, '/add_visit');
+
+              // if tabController on index 0, push to add_visit
+              // else push to add_visit_lama
+              if (_tabController.index == 0) {
+                Navigator.pushNamed(context, '/add_visit_new');
+              } else {
+                Navigator.pushNamed(context, '/add_visit');
+              }
             },
             icon: const Icon(
               Icons.add,
@@ -99,8 +107,18 @@ class _VisitPageState extends State<VisitPage>
                     );
                   },
                 ),
-                const Center(
-                  child: Text('Client Lama'),
+                ListView.separated(
+                  itemCount: visitEntitites.length,
+                  separatorBuilder: (context, index) {
+                    return const SizedBox(
+                      height: 5,
+                    );
+                  },
+                  itemBuilder: (context, index) {
+                    return VisitCard(
+                      index: index,
+                    );
+                  },
                 ),
               ],
             ),

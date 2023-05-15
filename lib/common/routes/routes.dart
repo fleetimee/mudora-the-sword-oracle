@@ -5,6 +5,7 @@ import 'package:fleetime_hris/ui/pages/add_overtime/add_overtime_ui.dart';
 import 'package:fleetime_hris/ui/pages/add_permission/add_permission_ui.dart';
 import 'package:fleetime_hris/ui/pages/add_reimbursement/add_reimbursement_ui.dart';
 import 'package:fleetime_hris/ui/pages/add_shift/add_shift_ui.dart';
+import 'package:fleetime_hris/ui/pages/add_visit/add_visit_ui_new.dart';
 import 'package:fleetime_hris/ui/pages/home/home_ui.dart';
 import 'package:fleetime_hris/ui/pages/news_announcement/news_announcement_ui.dart';
 import 'package:fleetime_hris/ui/pages/overtime_recap/overtime_recap_ui.dart';
@@ -33,6 +34,7 @@ final Map<String, WidgetBuilder> routes = {
   '/add_shift': (context) => const AddShiftPage(),
   '/add_reimbursement': (context) => const AddReimbursementPage(),
   '/add_visit': (context) => const AddVisitPage(),
+  '/add_visit_new': (context) => const AddVisitNewPage(),
   '/news_announcement': (context) => const NewsAnnouncementPage(),
   '/absent_map': (context) => const AbsentMapPage(),
   '/presence_history': (context) => const PresenceHistoryPage(),

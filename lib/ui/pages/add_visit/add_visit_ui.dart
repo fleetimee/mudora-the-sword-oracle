@@ -14,7 +14,7 @@ class AddVisitPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBarWithCross(
-        title: StringConstant.addVisitTitle,
+        title: 'Visit Kerja Lama',
       ),
       body: SingleChildScrollView(
         child: Padding(

@@ -22,6 +22,35 @@ class AddVisitForm extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           const Text(
+            'Pilih Client',
+            style: StyleConstant.formLabel,
+          ),
+          const SizedBox(
+            height: 8,
+          ),
+          FleetimeDropdownReuseable(
+            name: 'client',
+            validator: FormBuilderValidators.compose([
+              FormBuilderValidators.required(
+                errorText: 'Client tidak boleh kosong',
+              ),
+            ]),
+            hintText: 'Pilih Client',
+            items: const [
+              DropdownMenuItem(
+                value: 'Baru',
+                child: Text('Baru'),
+              ),
+              DropdownMenuItem(
+                value: 'Lama',
+                child: Text('Lama'),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 32,
+          ),
+          const Text(
             StringConstant.addVisitDestination,
             style: StyleConstant.formLabel,
           ),
