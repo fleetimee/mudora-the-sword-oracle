@@ -22,7 +22,7 @@ ThemeData lightTheme = FlexThemeData.light(
     useM2StyleDividerInM3: true,
     inputDecoratorRadius: 7.0,
   ),
-  appBarStyle: FlexAppBarStyle.primary,
+  appBarStyle: FlexAppBarStyle.surface,
   useMaterial3ErrorColors: true,
   visualDensity: FlexColorScheme.comfortablePlatformDensity,
   swapLegacyOnMaterial3: true,

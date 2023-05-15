@@ -13,7 +13,10 @@ class VisitCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.symmetric(
+        horizontal: 16.0,
+        vertical: 5,
+      ),
       child: Container(
         decoration: BoxDecoration(
           color: Colors.white,
@@ -88,11 +91,33 @@ class VisitCard extends StatelessWidget {
                         Text(
                           visitEntitites[index].address,
                           style: const TextStyle(
-                            fontSize: 12,
+                            fontSize: 14,
                             color: AppColors.grayscaleBody,
                             decoration: TextDecoration.underline,
                           ),
                         ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        visitEntitites.first == visitEntitites[index]
+                            ? ElevatedButton(
+                                onPressed: () {},
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: AppColors.stateErrorBase,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                ),
+                                child: const Text(
+                                  'Check Out',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              )
+                            : const SizedBox.shrink()
                       ],
                     ),
                   ),
